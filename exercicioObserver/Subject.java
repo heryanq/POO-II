@@ -1,3 +1,5 @@
+package exercicioobserver;
+
 public interface Subject {
     
     public void registerObserver(Observer o);

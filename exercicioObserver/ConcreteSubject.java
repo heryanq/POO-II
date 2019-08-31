@@ -1,14 +1,16 @@
+package exercicioobserver;
+
 import java.util.ArrayList;
 
 public class ConcreteSubject implements Subject {
     
-    private ArrayList observers;
-    private int valor;
-    private int valor1;
-    private int valor2;
+    private ArrayList<Observer> observers;
+    private double result;
+    private double value1;
+    private double value2;
 
     public ConcreteSubject() {
-        observers = new ArrayList();
+        this.observers = new ArrayList();
     }
 
     @Override
@@ -25,18 +27,19 @@ public class ConcreteSubject implements Subject {
 
     @Override
     public void notifyObservers(){
-        for(Observer observer: observers){
-            observer.update(DivObserver, ModObserver);
+        for(Observer observer: this.observers){
+            observer.update(this.value1, this.value2);
         }  
     }
 
-    public void ValorChanged(){
-        getValor();
+    public void ValuesChanged(){
         notifyObservers();
     }
 
-    public void getValor(){
-        this.valor = valor;
+    public void setValues(double value1, double value2){
+        this.value1 = value1;
+        this.value2 = value2;
+        ValuesChanged();
     }
 
 }
