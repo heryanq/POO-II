@@ -2,22 +2,22 @@ package adicionais;
 
 import bar.*;
 
-public class Kiwi extends DrinkDecorator {
+public class Vodka extends DrinkDecorator {
 	
 	BarVerage barverage;
 	
-	public Kiwi(BarVerage barverage) {
+	public Vodka(BarVerage barverage) {
 		this.barverage = barverage;
 	}
 
 	@Override
 	public String getDescription() {
-		return barverage.getDescription() + ", kiwi";
+		return barverage.getDescription() + ", vodka";
 	}
 
 	@Override
 	public double cost() {
-		return 3.00 + barverage.cost();
+		return 5.00 + barverage.cost();
 	}
 	
 	

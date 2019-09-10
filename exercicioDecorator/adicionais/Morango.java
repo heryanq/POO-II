@@ -17,7 +17,7 @@ public class Morango extends DrinkDecorator {
 
 	@Override
 	public double cost() {
-		return 3.00 + barverage.cost();
+		return 6.00 + barverage.cost();
 	}
 	
 	

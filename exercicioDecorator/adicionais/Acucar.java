@@ -17,7 +17,7 @@ public class Acucar extends DrinkDecorator {
 
 	@Override
 	public double cost() {
-		return 1.00 + barverage.cost();
+		return 5.00 + barverage.cost();
 	}
 	
 	
