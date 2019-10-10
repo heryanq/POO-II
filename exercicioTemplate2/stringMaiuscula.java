@@ -1,10 +1,10 @@
-package exerciciotemplate;
+package exerciciotemplate2;
 
 public class stringMaiuscula extends recebeString{
-
-    @Override
-    String transformarString() {
-        return stringDigitada.toLowerCase();
+    
+    public String transformarString() {
+        stringTratada = stringDigitada.toUpperCase();
+        return stringTratada;
     }
     
 }

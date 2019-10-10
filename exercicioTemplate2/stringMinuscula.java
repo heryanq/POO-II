@@ -1,10 +1,10 @@
-package exerciciotemplate;
+package exerciciotemplate2;
 
 public class stringMinuscula extends recebeString{
 
-    @Override
-    String transformarString() {
-        return stringDigitada.toUpperCase();
+    public String transformarString() {
+        stringTratada = stringDigitada.toLowerCase();
+        return stringTratada;
     }
     
     

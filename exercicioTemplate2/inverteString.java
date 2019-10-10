@@ -1,10 +1,10 @@
-package exerciciotemplate;
+package exerciciotemplate2;
 
 public class inverteString extends recebeString{
     
-    @Override
-    String transformarString() {
-        return new StringBuilder(stringDigitada).reverse().toString();
+    public String transformarString() {
+        stringTratada = new StringBuilder(stringDigitada).reverse().toString();
+        return stringTratada;
     }
     
     

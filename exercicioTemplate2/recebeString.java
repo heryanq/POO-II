@@ -1,4 +1,4 @@
-package exerciciotemplate;
+package exerciciotemplate2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,14 +6,17 @@ import java.io.InputStreamReader;
 
 abstract class recebeString {
     
-    String stringDigitada = null;
+    String stringDigitada;
+    String stringTratada;
     
     final void trataString() {
+        criaString();
         transformarString();
         imprimeString();
     }
     
-    private String getUserInput() {
+    private String criaString() {
+        stringDigitada = null;
         System.out.println("Por favor, digite algo: \n");
         
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -29,8 +32,8 @@ abstract class recebeString {
     
     abstract String transformarString();
     
-    public String imprimeString(){
-        return stringDigitada;
+    public void imprimeString(){
+        System.out.println(stringTratada);
     }
     
     
